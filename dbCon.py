@@ -4,8 +4,6 @@
 # ===============================================================================
 import sys
 sys.path.append('/home/leo-gwise/PycharmProjects/IbPy/DataLoader/')
-from ib.opt import ibConnection, message
-from ib.ext.Contract import Contract
 import pandas as pd
 from time import sleep,strftime
 import mysql.connector
@@ -13,7 +11,8 @@ import mysql.connector
 # Class IB_API
 # ===============================================================================
 DB_HOST = 'localhost'
-
+USERNAME = 'USERNAME'
+PASSWORD = 'PWD'
 
 class mysql_con():
 
@@ -21,8 +20,8 @@ class mysql_con():
         # Establish Connection
 
         # print('Connecting to DB...')
-        self.cnx = mysql.connector.connect(user='leo',
-                                           password='batman12',
+        self.cnx = mysql.connector.connect(user=USERNAME,
+                                           password=PASSWORD,
                                            host=DB_HOST,
                                            database=DB_DB
                                            )
