@@ -1,35 +1,38 @@
-
+#!/bin/usr/env python3
+# -*- coding:utf-8 -*-
 # ===============================================================================
 # LIBRARIES
 # ===============================================================================
 import sys
 sys.path.append('/home/leo-gwise/PycharmProjects/IbPy/DataLoader/')
 import pandas as pd
-from time import sleep,strftime
+from time import sleep
 import mysql.connector
 # ===============================================================================
 # Class IB_API
 # ===============================================================================
-DB_HOST = 'localhost'
-USERNAME = 'USERNAME'
-PASSWORD = 'PWD'
+DB_HOST = 'xxxx'
+USERNAME = 'xxxx'
+PASSWORD = 'xxxx'
+PORT = 3306
 
 class mysql_con():
 
     def __init__(self,DB_DB,DB_HOST=DB_HOST):
         # Establish Connection
 
-        # print('Connecting to DB...')
+        print('Connecting to DB...')
         self.cnx = mysql.connector.connect(user=USERNAME,
                                            password=PASSWORD,
                                            host=DB_HOST,
-                                           database=DB_DB
+                                           database=DB_DB,
+                                           port=PORT
                                            )
         self.cursor = self.cnx.cursor(buffered=True)
         self.curA = self.cnx.cursor(buffered=True)
         self.curB = self.cnx.cursor(buffered=True)
 
-        # print('Connecting successed')
+        print('Connecting successed')
         sleep(2)
 
     def createTable(self,TABLE):

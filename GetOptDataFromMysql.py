@@ -1,3 +1,5 @@
+#!/bin/usr/env python3
+# -*- coding:utf-8 -*-
 # ===============================================================================
 # LIBRARIES
 # ===============================================================================
@@ -10,7 +12,7 @@ ANNUL_RATE = 1.006
 # ===============================================================================
 # Class Reader
 # ===============================================================================
-
+global_conn = mysql_con('OPTION_DATA')
 
 def get_spx_opt_data(term_date_list,nearest_timestamp=datetime.today().strftime("%Y-%m-%d %T")):
 
@@ -19,10 +21,10 @@ def get_spx_opt_data(term_date_list,nearest_timestamp=datetime.today().strftime(
     next_term: '170623'
     '''
 
-    if nearest_timestamp[-8:] >= '16:00:00':
-        nearest_timestamp = nearest_timestamp[:10]+' 16:00:00'
+    if nearest_timestamp[-8:] >= '16:15:00':
+        nearest_timestamp = nearest_timestamp[:10]+' 16:15:00'
     print('The timestamp you looking @: ',nearest_timestamp)
-    conn = mysql_con('OPTION_DATA')
+
     all_data = pd.DataFrame({})
     und_price = 0
 
@@ -44,11 +46,12 @@ def get_spx_opt_data(term_date_list,nearest_timestamp=datetime.today().strftime(
             "ORDER BY SYMBOL ASC"
         )
 
-        opt_data = conn.get_data_by_pandas(query)
-        if len(opt_data) == 0:
-            return pd.DataFrame({}),''
-
-
+        opt_data = global_conn.get_data_by_pandas(query)
+        assert len(opt_data) > 0, ValueError('Option data Error, please'
+                                             'check following query in mySQL' +
+                                             '\n' + query)
+        assert len(opt_data[opt_data['OPT_ASK']==0]) < len(opt_data)*0.4, \
+            ValueError('Option data Error, please check following query in mySQL' + '\n' + query)
 
 
         # print(opt_data)
@@ -97,5 +100,30 @@ def get_spx_opt_data(term_date_list,nearest_timestamp=datetime.today().strftime(
     return all_data,round(und_price/len(term_date_list),3)
 
 
+def get_existing_month_contract(nearest_timestamp):
+    '''
+    Return a list of existing monthly options date
+    E.g
+    {'dates':
+    ['160819', '160916', '161021', '161118', '161216', '170120', '170317', '170616', '171215', '180615', '181221']
+    }
+    '''
+
+    tableName = 'SPX' + nearest_timestamp[2:7].replace('-', '')
+
+    query = (
+        "SELECT SYMBOL,MAX(RECORD_TS) FROM " + tableName +
+        " WHERE (SYMBOL LIKE '%P0%') "
+        "AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('"+nearest_timestamp+"','%Y-%m-%d %T')) <= 0 "
+        "AND (strike='2000') GROUP BY SYMBOL;"
+    )
+    all_options = global_conn.get_data_by_pandas(query)
+    return [i[6:12] for i in all_options[all_options['SYMBOL'].str.contains('SPX ')]['SYMBOL']]
+
+
 if __name__=='__main__':
-    print(get_spx_opt_data(['160129','160205'],'2016-01-05 10:34:23'))
+    zz = get_existing_month_contract('2016-08-10 10:06:00')
+    print(zz)
+    zz.append('160830')
+    zz.sort()
+    print(zz)

@@ -1,10 +1,12 @@
+#!/bin/usr/env python3
+# -*- coding:utf-8 -*-
 # ===============================================================================
 # LIBRARIES
 # ===============================================================================
 
 from datetime import datetime, timedelta
 from dbCon import mysql_con
-from VIX_MODEL_MAIN import VIX_index,VIX_future
+from VOL_MODEL_MAIN import VIX_index,VIX_future
 
 
 # ===============================================================================
