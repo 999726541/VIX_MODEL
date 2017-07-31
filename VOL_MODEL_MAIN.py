@@ -305,11 +305,12 @@ def main(expiration_t,nearest_timestamp):
     assert len(alldata) != 0, 'Data not avaliable'
     # if there is no data inside return empty pandas df
     if len(alldata) == 0: return pd.DataFrame({})
-    # record time span for calculating the vix
+    # record average time span for calculating the vix
     data_time_range = list(alldata['C_TS']) + list(alldata['P_TS'])
+    a = datetime.strptime(str(max(data_time_range)),'%Y-%m-%d %H:%M:%S')
+    b = datetime.strptime(str(min(data_time_range)),'%Y-%m-%d %H:%M:%S')
     time_dic = pd.DataFrame({
-        'end': [max(data_time_range)],
-        'start': [min(data_time_range)]
+        'quot_TS': [(a + (b-a)/2).strftime('%Y-%m-%d %H:%M:%S')],
     })
 
     # Step 1:
@@ -320,7 +321,7 @@ def main(expiration_t,nearest_timestamp):
 
     # get forward_index price
     f_price = find_forward_index_p(option_atm,nearest_timestamp)
-    forward_strick = pd.DataFrame({'Forward Price: ':[f_price]})
+    forward_strick = pd.DataFrame({'ForwardPrice':[f_price]})
 
     # get out of money put call and k0
     # some times if there is no enough data, return empty DataFrame
@@ -350,6 +351,7 @@ def main(expiration_t,nearest_timestamp):
     VIX = np.sqrt(_theta_square) * 100
     VIX = pd.DataFrame({'Vol_Index':[VIX]})
     return pd.concat([VIX,time_dic,forward_strick,skew_dic,
+                      pd.DataFrame({'expirationDate': expiration_t}),
                       pd.DataFrame({'UndPrice':[und_price]}),
                       pd.DataFrame({'min_ratio': [min_left_ratio]}),
                       pd.DataFrame({'min_left': [_mins_left]}),

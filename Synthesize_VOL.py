@@ -114,16 +114,48 @@ def VIX_index(nearest_timestamp=datetime.today().strftime("%Y-%m-%d %T")):
 
     if date_back == None:
         date_front = date_front.strftime("%Y%m%d")[2:]
-        # print('The option you looking:',date_front)
-        return vol_caculator([date_front],nearest_timestamp=nearest_timestamp)
+        _front = vol_caculator([date_front], nearest_timestamp=nearest_timestamp)
+        return {'vol_blend': _front['Vol_Index'].item(),
+                'front_p/c_Ratio': _front['put/call_Ratio'].item(),
+                'front_exipration': _front['expirationDate'].item(),
+                'front_vol': _front['Vol_Index'].item(),
+                'front_forward_Price': _front['ForwardPrice'].item(),
+                'back_p/c_Ratio': 0,
+                'back_exipration': 0,
+                'back_vol': 0,
+                'back_forward_Price': 0,
+                'UndPrice': _front['UndPrice'].item(),
+                'Record_TS': nearest_timestamp,
+                'Quato_TS': _front['quot_TS'].item()
+                }
     else:
         date_front = date_front.strftime("%Y%m%d")[2:]
         date_back = date_back.strftime("%Y%m%d")[2:]
         _front = vol_caculator([date_front], nearest_timestamp=nearest_timestamp)
         _back = vol_caculator([date_back], nearest_timestamp=nearest_timestamp)
-        # print(_front,_back)
-        return weighted_vix(_front['theta_square'].item(), _front['min_left'].item(), _front['min_ratio'].item(),
-                            _back['theta_square'].item(), _back['min_left'].item(), _back['min_ratio'].item(),30)
+
+        a = datetime.strptime((_front['quot_TS'].item()), '%Y-%m-%d %H:%M:%S')
+        b = datetime.strptime((_back['quot_TS'].item()), '%Y-%m-%d %H:%M:%S')
+        quot_time = (a + (b - a) / 2).strftime('%Y-%m-%d %H:%M:%S')
+
+        vol, front_weight, back_weight = weighted_vix(_front['theta_square'].item(), _front['min_left'].item(),
+                                                      _front['min_ratio'].item(),
+                                                      _back['theta_square'].item(), _back['min_left'].item(),
+                                                      _back['min_ratio'].item(), 30)
+        print('FrontWeight:BackWeight ', front_weight, ':', back_weight)
+        return {'vol_blend': vol,
+                'front_p/c_Ratio': _front['put/call_Ratio'].item(),
+                'front_exipration': _front['expirationDate'].item(),
+                'front_vol': _front['Vol_Index'].item(),
+                'front_forward_Price': _front['ForwardPrice'].item(),
+                'back_p/c_Ratio': _back['put/call_Ratio'].item(),
+                'back_exipration': _back['expirationDate'].item(),
+                'back_vol': _back['Vol_Index'].item(),
+                'back_forward_Price': _back['ForwardPrice'].item(),
+                'UndPrice': _front['UndPrice'].item(),
+                'Record_TS': nearest_timestamp,
+                'Quato_TS': quot_time
+                }
 
 
 def linearSpineLine_X_days_vol(days,nearest_timestamp=datetime.today().strftime("%Y-%m-%d %T")):
@@ -132,15 +164,51 @@ def linearSpineLine_X_days_vol(days,nearest_timestamp=datetime.today().strftime(
 
     if date_back == None:
         # print('The option you looking:',date_front)
-        return vol_caculator([date_front], nearest_timestamp=nearest_timestamp)
+        _front = vol_caculator([date_front], nearest_timestamp=nearest_timestamp)
+        return {'vol_blend': _front['Vol_Index'].item(),
+                'front_p/c_Ratio': _front['put/call_Ratio'].item(),
+                'front_exipration': _front['expirationDate'].item(),
+                'front_vol': _front['Vol_Index'].item(),
+                'front_forward_Price': _front['ForwardPrice'].item(),
+                'back_p/c_Ratio': 0,
+                'back_exipration': 0,
+                'back_vol': 0,
+                'back_forward_Price': 0,
+                'UndPrice': _front['UndPrice'].item(),
+                'Record_TS': nearest_timestamp,
+                'Quato_TS': _front['quot_TS'].item()
+                }
+
+
     else:
         _front = vol_caculator([date_front], nearest_timestamp=nearest_timestamp)
         _back = vol_caculator([date_back], nearest_timestamp=nearest_timestamp)
-        print(_front,_back)
-        return weighted_vix(_front['theta_square'].item(), _front['min_left'].item(), _front['min_ratio'].item(),
+        # print(_front,_back)
+
+        # get quato time
+        a = datetime.strptime((_front['quot_TS'].item()), '%Y-%m-%d %H:%M:%S')
+        b = datetime.strptime((_back['quot_TS'].item()), '%Y-%m-%d %H:%M:%S')
+        quot_time = (a + (b - a) / 2).strftime('%Y-%m-%d %H:%M:%S')
+
+        vol,front_weight,back_weight =  weighted_vix(_front['theta_square'].item(), _front['min_left'].item(), _front['min_ratio'].item(),
                             _back['theta_square'].item(), _back['min_left'].item(), _back['min_ratio'].item(), days)
+        print('FrontWeight:BackWeight ',front_weight,':',back_weight)
+
+        return {'vol_blend':vol,
+                'front_p/c_Ratio':_front['put/call_Ratio'].item(),
+                'front_exipration':_front['expirationDate'].item(),
+                'front_vol':_front['Vol_Index'].item(),
+                'front_forward_Price': _front['ForwardPrice'].item(),
+                'back_p/c_Ratio': _back['put/call_Ratio'].item(),
+                'back_exipration': _back['expirationDate'].item(),
+                'back_vol': _back['Vol_Index'].item(),
+                'back_forward_Price': _back['ForwardPrice'].item(),
+                'UndPrice':_front['UndPrice'].item(),
+                'Record_TS':nearest_timestamp,
+                'Quato_TS':quot_time
+                }
 
 
 if __name__=='__main__':
-    print(VIX_index('2016-08-10 16:15:00'))
-    print(linearSpineLine_X_days_vol(93,'2016-08-10 16:15:00'))
+    print(VIX_index('2016-07-17 09:40:00'))
+    # print(linearSpineLine_X_days_vol(279,'2016-09-20 16:15:00'))

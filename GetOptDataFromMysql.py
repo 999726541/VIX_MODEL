@@ -23,7 +23,7 @@ def get_spx_opt_data(term_date_list,nearest_timestamp=datetime.today().strftime(
 
     if nearest_timestamp[-8:] >= '16:15:00':
         nearest_timestamp = nearest_timestamp[:10]+' 16:15:00'
-    print('The timestamp you looking @: ',nearest_timestamp)
+    print('The timestamp you looking @: ',nearest_timestamp, 'for option ',term_date_list)
 
     all_data = pd.DataFrame({})
     und_price = 0
@@ -41,21 +41,20 @@ def get_spx_opt_data(term_date_list,nearest_timestamp=datetime.today().strftime(
             "FROM " + tableName + " " +
             "WHERE (SYMBOL LIKE '%" + date_ +"%') "
             "AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('"+ nearest_timestamp+"','%Y-%m-%d %T')) <= 0 "
+            "AND (record_ts > '" + nearest_timestamp[:10] + "')"
             "GROUP BY SYMBOL"
             ")"
             "ORDER BY SYMBOL ASC"
         )
 
         opt_data = global_conn.get_data_by_pandas(query)
-        assert len(opt_data) > 0, ValueError('Option data Error, please'
+        assert len(opt_data) > 0, ValueError('Option data Error, it might be due to that day'
+                                             ' is a holiday,so no data existing'
+                                             'in database please'
                                              'check following query in mySQL' +
                                              '\n' + query)
         assert len(opt_data[opt_data['OPT_ASK']==0]) < len(opt_data)*0.4, \
             ValueError('Option data Error, please check following query in mySQL' + '\n' + query)
-
-
-        # print(opt_data)
-        # if len(opt_data) == 0: raise 'NO '+date_+' DATA IN DATABASE'
 
         # get call data
         call_data = opt_data[opt_data['SYMBOL'].str.contains(date_ + 'C')]
@@ -115,7 +114,7 @@ def get_existing_month_contract(nearest_timestamp):
         "SELECT SYMBOL,MAX(RECORD_TS) FROM " + tableName +
         " WHERE (SYMBOL LIKE '%P0%') "
         "AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('"+nearest_timestamp+"','%Y-%m-%d %T')) <= 0 "
-        "AND (strike='2000') GROUP BY SYMBOL;"
+        "AND (strike='2000') AND (record_ts > '" + nearest_timestamp[:10] + "')GROUP BY SYMBOL;"
     )
     all_options = global_conn.get_data_by_pandas(query)
     return [i[6:12] for i in all_options[all_options['SYMBOL'].str.contains('SPX ')]['SYMBOL']]

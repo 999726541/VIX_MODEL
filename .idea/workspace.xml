@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81192dca-36ea-47e5-9540-9109efab87bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Synthesize_VOL.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/VIX_MODEL_MAIN.py" afterPath="$PROJECT_DIR$/VOL_MODEL_MAIN.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/VIX_MODEL.iml" afterPath="$PROJECT_DIR$/.idea/VIX_MODEL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="81192dca-36ea-47e5-9540-9109efab87bd" name="Default" comment="Adding writing into DB">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GetOptDataFromMysql.py" afterPath="$PROJECT_DIR$/GetOptDataFromMysql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Synthesize_VOL.py" afterPath="$PROJECT_DIR$/Synthesize_VOL.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VIX_CAL.py" afterPath="$PROJECT_DIR$/VIX_CAL.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VOL_MODEL_MAIN.py" afterPath="$PROJECT_DIR$/VOL_MODEL_MAIN.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbCon.py" afterPath="$PROJECT_DIR$/dbCon.py" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -23,8 +21,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/VIX_MODEL$GetOptDataFromMysql.coverage" NAME="GetOptDataFromMysql Coverage Results" MODIFIED="1501449465957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VIX_MODEL$VIX_CAL.coverage" NAME="VIX_CAL Coverage Results" MODIFIED="1500230056816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VIX_MODEL$Synthesize_VOL.coverage" NAME="Synthesize_VOL Coverage Results" MODIFIED="1501451044408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VIX_MODEL$VIX_CAL.coverage" NAME="VIX_CAL Coverage Results" MODIFIED="1501471825709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/VIX_MODEL$Synthesize_VOL.coverage" NAME="Synthesize_VOL Coverage Results" MODIFIED="1501468503344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/VIX_MODEL$vix_spot.coverage" NAME="vix_spot Coverage Results" MODIFIED="1501432970835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -39,15 +37,21 @@
       <file leaf-file-name="VOL_MODEL_MAIN.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VOL_MODEL_MAIN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#222#249#0" expanded="true" />
+                <element signature="e#437#518#0" expanded="false" />
                 <element signature="e#731#1709#0" expanded="false" />
                 <element signature="e#933#1278#0" expanded="false" />
                 <element signature="e#988#1278#0" expanded="false" />
                 <element signature="e#1328#1648#0" expanded="false" />
                 <element signature="e#1385#1642#0" expanded="false" />
+                <element signature="e#1763#2870#0" expanded="false" />
+                <element signature="e#1763#1888#1" expanded="false" />
+                <element signature="e#2209#2291#0" expanded="false" />
+                <element signature="e#2906#3945#0" expanded="false" />
+                <element signature="e#2906#2938#0" expanded="false" />
+                <element signature="e#3676#3692#0" expanded="false" />
                 <element signature="e#3995#4834#0" expanded="false" />
                 <element signature="e#3995#4060#1" expanded="false" />
                 <element signature="e#4887#5756#0" expanded="false" />
@@ -58,6 +62,18 @@
                 <element signature="e#5475#5704#0" expanded="false" />
                 <element signature="e#5615#5704#0" expanded="false" />
                 <element signature="e#5808#6486#0" expanded="false" />
+                <element signature="e#6556#9639#0" expanded="false" />
+                <element signature="e#6556#6663#1" expanded="false" />
+                <element signature="e#6997#7029#0" expanded="false" />
+                <element signature="e#7208#7284#0" expanded="false" />
+                <element signature="e#7518#7592#0" expanded="false" />
+                <element signature="e#7948#8018#0" expanded="false" />
+                <element signature="e#8235#8285#0" expanded="false" />
+                <element signature="e#8615#9542#0" expanded="false" />
+                <element signature="e#8700#8878#0" expanded="false" />
+                <element signature="e#8987#9174#0" expanded="false" />
+                <element signature="e#9202#9542#0" expanded="false" />
+                <element signature="e#9752#11694#0" expanded="false" />
                 <element signature="e#10057#10215#0" expanded="false" />
                 <element signature="e#10161#10215#0" expanded="false" />
                 <element signature="e#10347#10960#0" expanded="false" />
@@ -67,54 +83,36 @@
                 <element signature="e#11102#11245#0" expanded="false" />
                 <element signature="e#11326#11694#0" expanded="false" />
                 <element signature="e#11378#11694#0" expanded="false" />
+                <element signature="e#12427#12436#0" expanded="false" />
+                <element signature="e#12735#12769#0" expanded="false" />
+                <element signature="e#13192#13201#0" expanded="false" />
+                <element signature="e#14195#14258#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Synthesize_VOL.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Synthesize_VOL.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Synthesize_VOL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="128" column="96" selection-start-line="128" selection-start-column="96" selection-end-line="128" selection-end-column="96" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="e#429#510#0" expanded="false" />
-                <element signature="e#608#755#1" expanded="false" />
                 <element signature="e#863#1841#0" expanded="false" />
-                <element signature="e#1065#1410#0" expanded="false" />
-                <element signature="e#1120#1410#0" expanded="false" />
-                <element signature="e#1460#1780#0" expanded="false" />
-                <element signature="e#1517#1774#0" expanded="false" />
-                <element signature="e#1962#3842#0" expanded="false" />
-                <element signature="e#1962#2074#1" expanded="false" />
-                <element signature="e#2314#2356#0" expanded="false" />
-                <element signature="e#2880#3799#0" expanded="false" />
-                <element signature="e#3471#3718#0" expanded="false" />
-                <element signature="e#3519#3718#0" expanded="false" />
                 <element signature="e#3953#4674#0" expanded="false" />
-                <element signature="e#3953#4222#1" expanded="false" />
-                <element signature="e#4756#5595#0" expanded="false" />
-                <element signature="e#4878#5057#0" expanded="false" />
-                <element signature="e#5076#5595#0" expanded="false" />
-                <element signature="e#5699#6434#0" expanded="false" />
-                <element signature="e#5878#6003#0" expanded="false" />
-                <element signature="e#6022#6434#0" expanded="false" />
-                <element signature="e#6466#6569#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetOptDataFromMysql.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GetOptDataFromMysql.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GetOptDataFromMysql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="124" column="57" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="57" />
+            <state relative-caret-position="240">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#222#249#0" expanded="true" />
-                <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-                <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+                <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
               </folding>
             </state>
           </provider>
@@ -123,11 +121,10 @@
       <file leaf-file-name="dbCon.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbCon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="225">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-                <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+                <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
               </folding>
             </state>
           </provider>
@@ -136,8 +133,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,11 +143,40 @@
       <file leaf-file-name="VIX_CAL.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/VIX_CAL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1139">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#223#263#0" expanded="true" />
+                <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+                <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conversion.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/conversion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-133">
+              <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,10 +203,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Synthesize_VIX.py" />
         <option value="$PROJECT_DIR$/VIX_MODEL_MAIN.py" />
-        <option value="$PROJECT_DIR$/VIX_CAL.py" />
         <option value="$PROJECT_DIR$/VOL_MODEL_MAIN.py" />
-        <option value="$PROJECT_DIR$/GetOptDataFromMysql.py" />
         <option value="$PROJECT_DIR$/Synthesize_VOL.py" />
+        <option value="$PROJECT_DIR$/GetOptDataFromMysql.py" />
+        <option value="$PROJECT_DIR$/VIX_CAL.py" />
+        <option value="$PROJECT_DIR$/Log.txt" />
         <option value="$PROJECT_DIR$/dbCon.py" />
       </list>
     </option>
@@ -206,7 +233,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -241,14 +268,23 @@
               <option name="myItemId" value="VIX_MODEL" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VIX_MODEL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VIX_MODEL">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -264,7 +300,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Synthesize_VOL">
+  <component name="RunManager" selected="Python.VIX_CAL">
     <configuration default="false" name="vix_spot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -553,10 +589,10 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Synthesize_VOL" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GetOptDataFromMysql" />
-        <item index="2" class="java.lang.String" itemvalue="Python.vix_spot" />
-        <item index="3" class="java.lang.String" itemvalue="Python.VIX_CAL" />
+        <item index="0" class="java.lang.String" itemvalue="Python.VIX_CAL" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Synthesize_VOL" />
+        <item index="2" class="java.lang.String" itemvalue="Python.GetOptDataFromMysql" />
+        <item index="3" class="java.lang.String" itemvalue="Python.vix_spot" />
       </list>
     </recent_temporary>
   </component>
@@ -578,23 +614,40 @@
       <option name="project" value="LOCAL" />
       <updated>1501361489931</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding x-days volatility Function">
+      <created>1501451249683</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1501451249683</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14520743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261745" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4375839" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15954416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14520743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32797858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32797858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2128514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15954416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -613,7 +666,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second" />
-    <option name="LAST_COMMIT_MESSAGE" value="second" />
+    <MESSAGE value="Adding x-days volatility Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding x-days volatility Function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -625,12 +679,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -641,6 +701,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -650,6 +722,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -659,29 +735,8 @@
         <state relative-caret-position="2280">
           <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#429#510#0" expanded="false" />
-            <element signature="e#608#755#1" expanded="false" />
             <element signature="e#863#1841#0" expanded="false" />
-            <element signature="e#1065#1410#0" expanded="false" />
-            <element signature="e#1120#1410#0" expanded="false" />
-            <element signature="e#1460#1780#0" expanded="false" />
-            <element signature="e#1517#1774#0" expanded="false" />
-            <element signature="e#1962#3842#0" expanded="false" />
-            <element signature="e#1962#2074#1" expanded="false" />
-            <element signature="e#2314#2356#0" expanded="false" />
-            <element signature="e#2880#3799#0" expanded="false" />
-            <element signature="e#3471#3718#0" expanded="false" />
-            <element signature="e#3519#3718#0" expanded="false" />
             <element signature="e#3953#4674#0" expanded="false" />
-            <element signature="e#3953#4222#1" expanded="false" />
-            <element signature="e#4756#5595#0" expanded="false" />
-            <element signature="e#4878#5057#0" expanded="false" />
-            <element signature="e#5076#5595#0" expanded="false" />
-            <element signature="e#5699#6434#0" expanded="false" />
-            <element signature="e#5878#6003#0" expanded="false" />
-            <element signature="e#6022#6434#0" expanded="false" />
-            <element signature="e#6466#6569#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,8 +747,7 @@
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -703,8 +757,7 @@
         <state relative-caret-position="1800">
           <caret line="120" column="13" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -723,6 +776,15 @@
           <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
@@ -732,12 +794,18 @@
         <state relative-caret-position="7710">
           <caret line="519" column="0" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -748,6 +816,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -757,6 +837,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -767,8 +851,7 @@
           <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -778,8 +861,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -798,6 +880,15 @@
           <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
@@ -807,12 +898,18 @@
         <state relative-caret-position="9342">
           <caret line="519" column="0" selection-start-line="519" selection-start-column="0" selection-end-line="519" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -823,6 +920,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -832,6 +941,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,8 +955,7 @@
           <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -853,8 +965,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -865,6 +976,15 @@
           <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding>
             <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
@@ -874,12 +994,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -890,6 +1016,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -899,6 +1037,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -909,8 +1051,7 @@
           <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -920,8 +1061,7 @@
         <state relative-caret-position="1296">
           <caret line="72" column="76" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="76" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -932,6 +1072,15 @@
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
@@ -941,12 +1090,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -957,6 +1112,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -966,6 +1133,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -977,8 +1148,7 @@
           <caret line="95" column="6" selection-start-line="95" selection-start-column="6" selection-end-line="95" selection-end-column="6" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -988,8 +1158,7 @@
         <state relative-caret-position="1296">
           <caret line="72" column="76" selection-start-line="72" selection-start-column="76" selection-end-line="72" selection-end-column="76" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -1000,6 +1169,15 @@
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
@@ -1009,12 +1187,18 @@
         <state relative-caret-position="1368">
           <caret line="497" column="66" selection-start-line="497" selection-start-column="66" selection-end-line="497" selection-end-column="66" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -1025,6 +1209,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -1034,6 +1230,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1044,8 +1244,7 @@
           <caret line="24" column="33" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -1055,8 +1254,7 @@
         <state relative-caret-position="1512">
           <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -1067,6 +1265,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
@@ -1076,12 +1283,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -1092,6 +1305,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -1101,6 +1326,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,8 +1340,7 @@
           <caret line="24" column="33" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -1122,8 +1350,7 @@
         <state relative-caret-position="1512">
           <caret line="84" column="7" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -1133,12 +1360,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -1149,6 +1382,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -1158,6 +1403,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1168,8 +1417,7 @@
           <caret line="24" column="33" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -1179,8 +1427,7 @@
         <state relative-caret-position="666">
           <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
@@ -1190,12 +1437,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -1206,6 +1459,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -1215,6 +1480,10 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1225,8 +1494,7 @@
           <caret line="24" column="33" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
           </folding>
         </state>
       </provider>
@@ -1236,42 +1504,74 @@
         <state relative-caret-position="666">
           <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rrr.csv" />
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/mysql/connector/conversion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="-133">
+          <caret line="194" column="20" selection-start-line="194" selection-start-column="20" selection-end-line="194" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VIX_CAL.py">
+    <entry file="file://$PROJECT_DIR$/GetOptDataFromMysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1139">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <element signature="e#223#263#0" expanded="true" />
+            <element signature="e#222#249#0" expanded="true" />
+            <marker date="1501458312000" expanded="true" signature="4285:4580" placeholder="SELECT SYMBO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbCon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <marker date="1501472141000" expanded="true" signature="4234:4527" placeholder="INSERT INTO `missing_value`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VOL_MODEL_MAIN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="360" column="16" selection-start-line="360" selection-start-column="16" selection-end-line="360" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#222#249#0" expanded="true" />
+            <element signature="e#437#518#0" expanded="false" />
             <element signature="e#731#1709#0" expanded="false" />
             <element signature="e#933#1278#0" expanded="false" />
             <element signature="e#988#1278#0" expanded="false" />
             <element signature="e#1328#1648#0" expanded="false" />
             <element signature="e#1385#1642#0" expanded="false" />
+            <element signature="e#1763#2870#0" expanded="false" />
+            <element signature="e#1763#1888#1" expanded="false" />
+            <element signature="e#2209#2291#0" expanded="false" />
+            <element signature="e#2906#3945#0" expanded="false" />
+            <element signature="e#2906#2938#0" expanded="false" />
+            <element signature="e#3676#3692#0" expanded="false" />
             <element signature="e#3995#4834#0" expanded="false" />
             <element signature="e#3995#4060#1" expanded="false" />
             <element signature="e#4887#5756#0" expanded="false" />
@@ -1282,6 +1582,18 @@
             <element signature="e#5475#5704#0" expanded="false" />
             <element signature="e#5615#5704#0" expanded="false" />
             <element signature="e#5808#6486#0" expanded="false" />
+            <element signature="e#6556#9639#0" expanded="false" />
+            <element signature="e#6556#6663#1" expanded="false" />
+            <element signature="e#6997#7029#0" expanded="false" />
+            <element signature="e#7208#7284#0" expanded="false" />
+            <element signature="e#7518#7592#0" expanded="false" />
+            <element signature="e#7948#8018#0" expanded="false" />
+            <element signature="e#8235#8285#0" expanded="false" />
+            <element signature="e#8615#9542#0" expanded="false" />
+            <element signature="e#8700#8878#0" expanded="false" />
+            <element signature="e#8987#9174#0" expanded="false" />
+            <element signature="e#9202#9542#0" expanded="false" />
+            <element signature="e#9752#11694#0" expanded="false" />
             <element signature="e#10057#10215#0" expanded="false" />
             <element signature="e#10161#10215#0" expanded="false" />
             <element signature="e#10347#10960#0" expanded="false" />
@@ -1291,61 +1603,40 @@
             <element signature="e#11102#11245#0" expanded="false" />
             <element signature="e#11326#11694#0" expanded="false" />
             <element signature="e#11378#11694#0" expanded="false" />
+            <element signature="e#12427#12436#0" expanded="false" />
+            <element signature="e#12735#12769#0" expanded="false" />
+            <element signature="e#13192#13201#0" expanded="false" />
+            <element signature="e#14195#14258#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VIX_CAL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#223#263#0" expanded="true" />
+            <marker date="1501472030000" expanded="true" signature="1732:1774" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1840" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:1901" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2007" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2169" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="1732:2171" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3029" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3693" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
+            <marker date="1501472030000" expanded="true" signature="2995:3721" placeholder="INSERT INTO `VIX_TERM_STRUCTURE`... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Synthesize_VOL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="128" column="96" selection-start-line="128" selection-start-column="96" selection-end-line="128" selection-end-column="96" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#429#510#0" expanded="false" />
-            <element signature="e#608#755#1" expanded="false" />
             <element signature="e#863#1841#0" expanded="false" />
-            <element signature="e#1065#1410#0" expanded="false" />
-            <element signature="e#1120#1410#0" expanded="false" />
-            <element signature="e#1460#1780#0" expanded="false" />
-            <element signature="e#1517#1774#0" expanded="false" />
-            <element signature="e#1962#3842#0" expanded="false" />
-            <element signature="e#1962#2074#1" expanded="false" />
-            <element signature="e#2314#2356#0" expanded="false" />
-            <element signature="e#2880#3799#0" expanded="false" />
-            <element signature="e#3471#3718#0" expanded="false" />
-            <element signature="e#3519#3718#0" expanded="false" />
             <element signature="e#3953#4674#0" expanded="false" />
-            <element signature="e#3953#4222#1" expanded="false" />
-            <element signature="e#4756#5595#0" expanded="false" />
-            <element signature="e#4878#5057#0" expanded="false" />
-            <element signature="e#5076#5595#0" expanded="false" />
-            <element signature="e#5699#6434#0" expanded="false" />
-            <element signature="e#5878#6003#0" expanded="false" />
-            <element signature="e#6022#6434#0" expanded="false" />
-            <element signature="e#6466#6569#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbCon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <marker date="1501451203000" expanded="true" signature="4237:4530" placeholder="INSERT INTO `missing_value`... " />
-            <marker date="1501451203000" expanded="true" signature="4869:4963" placeholder="select * fro... SPX   170519C02250000_bidask" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GetOptDataFromMysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="124" column="57" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="57" />
-          <folding>
-            <element signature="e#222#249#0" expanded="true" />
-            <marker date="1501449517000" expanded="true" signature="4121:4155" placeholder="SELECT SYMBO... SPXmissing_value" />
-            <marker date="1501449517000" expanded="true" signature="4121:4366" placeholder="SELECT SYMBO... SPX1612" />
           </folding>
         </state>
       </provider>

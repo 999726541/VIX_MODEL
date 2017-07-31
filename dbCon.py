@@ -11,9 +11,9 @@ import mysql.connector
 # ===============================================================================
 # Class IB_API
 # ===============================================================================
-DB_HOST = 'xxxx'
-USERNAME = 'xxxx'
-PASSWORD = 'xxxx'
+DB_HOST = 'xxx'
+USERNAME = 'xxx'
+PASSWORD = 'xxx'
 PORT = 3306
 
 class mysql_con():
@@ -116,8 +116,4 @@ class mysql_con():
         return pd.read_sql(_query,self.cnx)
 
 if __name__=='__main__':
-    zz = mysql_con()
-    # rr = zz.get_data_by_pandas("select * from `SPX   170421C02200000_bidask` ORDER BY `Record_TS`")
-    kk = zz.get_data_by_pandas('select * from `SPX   170519C02250000_bidask` where B_A_C="ask" order by Record_TS desc limit 1')
-    print(kk)
-    # for i in zz.query("select * from `SPX   170421C02200000_greeks` ORDER BY `Record_TS`"):
+    pass
