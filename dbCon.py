@@ -11,9 +11,9 @@ import mysql.connector
 # ===============================================================================
 # Class IB_API
 # ===============================================================================
-DB_HOST = '99.230.202.105'
-USERNAME = 'leo'
-PASSWORD = 'batman12'
+DB_HOST = 'xxx'
+USERNAME = 'xxx'
+PASSWORD = 'xxx'
 PORT = 3306
 
 class mysql_con():
