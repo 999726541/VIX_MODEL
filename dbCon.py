@@ -1,35 +1,38 @@
-
+#!/bin/usr/env python3
+# -*- coding:utf-8 -*-
 # ===============================================================================
 # LIBRARIES
 # ===============================================================================
 import sys
 sys.path.append('/home/leo-gwise/PycharmProjects/IbPy/DataLoader/')
 import pandas as pd
-from time import sleep,strftime
+from time import sleep
 import mysql.connector
 # ===============================================================================
 # Class IB_API
 # ===============================================================================
-DB_HOST = 'localhost'
-USERNAME = 'USERNAME'
-PASSWORD = 'PWD'
+DB_HOST = '99.230.202.105'
+USERNAME = 'leo'
+PASSWORD = 'batman12'
+PORT = 3306
 
 class mysql_con():
 
     def __init__(self,DB_DB,DB_HOST=DB_HOST):
         # Establish Connection
 
-        # print('Connecting to DB...')
+        print('Connecting to DB...')
         self.cnx = mysql.connector.connect(user=USERNAME,
                                            password=PASSWORD,
                                            host=DB_HOST,
-                                           database=DB_DB
+                                           database=DB_DB,
+                                           port=PORT
                                            )
         self.cursor = self.cnx.cursor(buffered=True)
         self.curA = self.cnx.cursor(buffered=True)
         self.curB = self.cnx.cursor(buffered=True)
 
-        # print('Connecting successed')
+        print('Connecting successed')
         sleep(2)
 
     def createTable(self,TABLE):
@@ -113,8 +116,4 @@ class mysql_con():
         return pd.read_sql(_query,self.cnx)
 
 if __name__=='__main__':
-    zz = mysql_con()
-    # rr = zz.get_data_by_pandas("select * from `SPX   170421C02200000_bidask` ORDER BY `Record_TS`")
-    kk = zz.get_data_by_pandas('select * from `SPX   170519C02250000_bidask` where B_A_C="ask" order by Record_TS desc limit 1')
-    print(kk)
-    # for i in zz.query("select * from `SPX   170421C02200000_greeks` ORDER BY `Record_TS`"):
+    pass

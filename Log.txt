@@ -1,0 +1,988 @@
+calculating :2017-01-16 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-16 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-16 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-16 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-16 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-16 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-02-20 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1702 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1702 WHERE (SYMBOL LIKE '%170317%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-02-20 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-02-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-16 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1701 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1701 WHERE (SYMBOL LIKE '%170210%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-01-16 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-01-16')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-01-31 09:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-01-31 10:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-01-31 11:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-01-31 12:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-01-31 13:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-01-31 14:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-01-31 15:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-03-17 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-22 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-22 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-22 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-22 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-22 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-22 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-22 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-23 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-24 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-27 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-28 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-29 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-30 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-31 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-03-17 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-17 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-17 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-17')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-20 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-20 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-20')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-03-21 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1703 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1703 WHERE (SYMBOL LIKE '%170414%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-03-21 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-03-21')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-03 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-03 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-03 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-14 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-03 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-03 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 09:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-03 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 10:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-03 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-04 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 11:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-04 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 12:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-04 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-04 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 13:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-04 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-04 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 14:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-28 15:40:00
+Date is to short, please enter value shorter days
+
+calculating :2017-04-04 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-05 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-06 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-07 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-10 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-11 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-12 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-13 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-14 09:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 09:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 10:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 10:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 11:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 11:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 12:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 12:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 13:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 13:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 14:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 14:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-14 15:40:00
+Option data Error, it might be due to that day is a holiday,so no data existingin database pleasecheck following query in mySQL
+SELECT * FROM SPX1704 WHERE (SYMBOL, RECORD_TS) IN  (SELECT SYMBOL,MAX(RECORD_TS) FROM SPX1704 WHERE (SYMBOL LIKE '%170512%') AND (STR_TO_DATE(RECORD_TS,'%Y-%m-%d %T') - STR_TO_DATE('2017-04-14 15:40:00','%Y-%m-%d %T')) <= 0 AND (record_ts > '2017-04-14')GROUP BY SYMBOL)ORDER BY SYMBOL ASC
+
+calculating :2017-04-17 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-17 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-17 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-17 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-17 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-17 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-17 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-18 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-19 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-20 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-21 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-24 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-25 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-26 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-27 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 09:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 10:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 11:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 12:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 13:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 14:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-04-28 15:40:00
+Date is to short or That date is in holiday, please enter value larger than 30 days
+
+calculating :2017-08-03 16:00:00
+MySQL Connection not available.
+
+calculating :2017-08-03 16:20:00
+MySQL Connection not available.
+
+calculating :2017-08-04 09:40:00
+MySQL Connection not available.
+
+calculating :2017-08-04 09:45:01
+MySQL Connection not available.
+
+calculating :2017-08-04 09:50:00
+MySQL Connection not available.
+
+calculating :2017-08-04 09:55:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:00:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:05:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:10:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:15:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:20:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:25:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:30:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:35:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:40:01
+MySQL Connection not available.
+
+calculating :2017-08-04 10:45:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:50:00
+MySQL Connection not available.
+
+calculating :2017-08-04 10:55:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:00:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:05:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:10:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:15:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:20:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:25:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:30:01
+MySQL Connection not available.
+
+calculating :2017-08-04 11:35:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:40:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:45:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:50:00
+MySQL Connection not available.
+
+calculating :2017-08-04 11:55:00
+MySQL Connection not available.
+
+calculating :2017-08-04 12:00:00
+MySQL Connection not available.
+
+calculating :2017-08-04 12:05:00
+MySQL Connection not available.
+
+calculating :2017-08-04 12:10:00
+MySQL Connection not available.
+
