@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GwiseQuants/.idea/GwiseQuants.iml" filepath="$PROJECT_DIR$/../GwiseQuants/.idea/GwiseQuants.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VIX_MODEL.iml" filepath="$PROJECT_DIR$/.idea/VIX_MODEL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxxxtest/.idea/xxxxtest.iml" filepath="$PROJECT_DIR$/../xxxxtest/.idea/xxxxtest.iml" />
     </modules>
   </component>
 </project>
